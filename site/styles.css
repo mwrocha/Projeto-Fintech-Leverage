@@ -1,0 +1,147 @@
+/* Configuração básica */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0efaa8;
+    margin-top: 56px; /* Espaço para o navbar fixo */
+}
+
+/* Cabeçalho */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-brand .highlight {
+    color: #0efaa8; /* Destaque para o ponto final */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0efaa8; /* Verde ao passar o mouse */
+}
+
+/* Seção Home */
+.main-section {
+    padding: 80px 20px; /* Ajuste dinâmico */
+    background-color: #020305;
+    color: rgb(232, 192, 192);
+    text-align: center;
+    min-height: 100vh; /* Garantir altura mínima total da tela */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+}
+
+.main-section .text {
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: #0efaa8;
+    margin-bottom: 20px;
+}
+
+.main-section .lead {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.main-section .btn {
+    border: 2px solid #0efaa8; /* Botão cadastre-se */
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-section .btn:hover {
+    background-color: #0efaa8; /* Fundo verde ao passar o mouse */
+    color: #ffffff;
+}
+
+/* Imagem do Hero */
+.hero-image {
+    max-width: 500px; /* largura da imagem */
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+/* Seções subsequentes */
+.plataforma-section {
+    padding: 10px 10px;
+    background-color: #e9ecef; /* Fundo levemente diferente para contraste */
+    color: #303030;
+    height: 100vh; /* Garantir altura total da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* centralizador imagens seção plataforma */
+.plataforma-section .section-image {
+    max-width: 100%; /* Limita a largura ao container */
+    width: 100%; /* Ajuste maior do tamanho padrão */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    display: block;
+}
+
+/* Estilos da seção de login */
+.login-section {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-section .section-title {
+    font-size: 2.5rem;
+    
+}
+
+/* Ajustes para telas médias */
+@media (max-width: 992px) {
+    .main-section {
+        padding: 60px 15px;
+    }
+
+    .main-section .text {
+        font-size: 3.5rem; /* Reduz para telas menores */
+    }
+
+    .main-section .lead {
+        font-size: 0.9rem; /* Texto reduzido */
+    }
+
+    .hero-image {
+        max-width: 80%; /* Reduz a largura da imagem */
+    }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 576px) {
+    .main-section {
+        padding: 40px 10px;
+    }
+
+    .main-section .text {
+        font-size: 3rem; /* Texto ainda menor para celulares */
+    }
+
+    .main-section .lead {
+        font-size: 0.8rem; /* Texto mais compacto */
+    }
+
+    .hero-image {
+        max-width: 70%; /* Reduz ainda mais a imagem */
+    }
+}

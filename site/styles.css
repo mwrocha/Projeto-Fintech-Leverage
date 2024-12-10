@@ -1,4 +1,4 @@
-/* Configuração básica */
+/* base */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #0efaa8;
@@ -32,7 +32,7 @@ body {
     background-color: #020305;
     color: rgb(232, 192, 192);
     text-align: center;
-    min-height: 100vh; /* Garantir altura mínima total da tela */
+    min-height: 100vh;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -74,16 +74,16 @@ body {
 /* Seções subsequentes */
 .plataforma-section {
     padding: 10px 10px;
-    background-color: #e9ecef; /* Fundo levemente diferente para contraste */
+    background-color: #e9ecef; /* Fundo diferente para contraste */
     color: #303030;
-    height: 100vh; /* Garantir altura total da tela */
+    height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* Estilização do título principal da seção Plataforma */
+/* título principal da seção plataforma */
 .plataforma-titulo {
     font-size: 4.5rem;
     font-weight: bold;
@@ -91,7 +91,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* Estilização dos subtítulos da seção Plataforma */
+/* subtítulos da seção plataforma */
 .plataforma-subtitulo {
     font-size: 2.5rem;
     font-weight: 600;
@@ -99,7 +99,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Estilização da descrição */
+/* titulo pequeno */
 .plataforma-descricao {
     font-size: 1.5rem;
     color: #6c757d;
@@ -109,14 +109,14 @@ body {
 
 /* centralizador imagens seção plataforma */
 .plataforma-section .section-image {
-    max-width: 100%; /* Limita a largura ao container */
-    width: 100%; /* Ajuste maior do tamanho padrão */
-    height: auto; /* Mantém a proporção da imagem */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    max-width: 100%; 
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
     display: block;
 }
 
-/* Estilos da seção de login */
+/* seção de login */
 .login-section {
     padding: 80px 20px;
     background-color: #f8f9fa;
@@ -158,43 +158,43 @@ body {
     }
 
     .main-section .text {
-        font-size: 3rem; /* Texto ainda menor para celulares */
+        font-size: 3rem; 
     }
 
     .main-section .lead {
-        font-size: 0.8rem; /* Texto mais compacto */
+        font-size: 0.8rem; 
     }
 
     .hero-image {
-        max-width: 70%; /* Reduz ainda mais a imagem */
+        max-width: 70%; 
     }
 }
 
-/* Responsividade para a seção Plataforma */
+/* responsividade seção Plataforma */
 @media (max-width: 992px) {
     .plataforma-titulo {
-        font-size: 3rem; /* Reduz tamanho do título em telas médias */
+        font-size: 3rem; 
     }
 
     .plataforma-subtitulo {
-        font-size: 2rem; /* Reduz tamanho dos subtítulos */
+        font-size: 2rem; 
     }
 
     .plataforma-descricao {
-        font-size: 1.2rem; /* Ajusta o tamanho da descrição */
+        font-size: 1.2rem; 
     }
 }
 
 @media (max-width: 576px) {
     .plataforma-titulo {
-        font-size: 2.5rem; /* Ajusta o título para telas pequenas */
+        font-size: 2.5rem; 
     }
 
     .plataforma-subtitulo {
-        font-size: 1.8rem; /* Subtítulo para dispositivos menores */
+        font-size: 1.8rem; 
     }
 
     .plataforma-descricao {
-        font-size: 1rem; /* Descrição compacta */
+        font-size: 1rem; 
     }
 }
